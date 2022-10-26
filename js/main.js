@@ -56,7 +56,7 @@ function convert(is){
             indizea=i;
             eremuakBete()        
         }else{
-            let objektua=await fetch("http://openlibrary.org/api/books?bibkeys=ISBN:"+isbn.value+"&format=json&jscmd=details").then(r=> r.json())
+            let objektua=await fetch("https://openlibrary.org/api/books?bibkeys=ISBN:"+isbn.value+"&format=json&jscmd=details").then(r=> r.json())
             datubasea.push(convert(objektua));
             console.log(datubasea)
             indizea=datubasea.length-1;
